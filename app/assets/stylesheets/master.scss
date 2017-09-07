@@ -472,3 +472,58 @@ ul.navbar-nav a:hover {
 
 /***** ----- Portfolio part end ----- *****/
 
+/***** ----- About us part start ----- *****/
+
+.about-us-area {
+    background-color: #f1f1f1;
+}
+
+.about-us-content {
+    padding: 45px 0;
+}
+
+.check-list {
+    list-style: outside none none;
+}
+
+.check-list li::before {
+    background-color: #d63138;
+    border-radius: 50%;
+    color: #fff;
+    content: "";
+    font-family: fontawesome;
+    font-size: 12px;
+    height: 20px;
+    left: 0;
+    line-height: 20px;
+    margin-right: 10px;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    width: 20px;
+}
+
+.check-list li {
+    margin-bottom: 10px;
+    padding-left: 35px;
+    position: relative;
+}
+
+.about-us-img {
+    height: 350px;
+    margin: 50px auto;
+    position: relative;
+    text-align: center;
+    width: 350px;
+}
+
+.about-us-img img {
+    left: 0;
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+
+/***** ----- About us part end ----- *****/
+
