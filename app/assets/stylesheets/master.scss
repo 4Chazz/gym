@@ -595,6 +595,74 @@ ul.navbar-nav a:hover {
   bottom: 38px;
 }
 
+/***** ----- Price table part start ----- *****/
 
-/***** ----- trainer part end ----- *****/
+.price-table-area {
+  background-color: #f1f1f1;
+}
+
+.price-table-dec {
+  background-color: #d63138;
+  color: #fff;
+  font-size: 30px;
+  font-style: italic;
+  font-weight: 800;
+  margin: 0 auto 30px;
+  padding: 13px;
+  text-align: center;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+.standard-price {
+  background-color: #2e323d;
+}
+
+.price-table-dec h2 {
+  background-color: #2e323d;
+}
+
+.standard-price h2 {
+  background-color: #d63138;
+}
+
+.price-table-dec ul li {
+  border-top: 1px solid #fff;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
+  list-style: outside none none;
+  padding: 15px;
+}
+
+.price-table-dec li:last-child {
+  border-bottom: 1px solid #fff;
+}
+
+.price-table-dec ul {
+  margin: 20px 0;
+  padding: 0 20px;
+}
+
+.price-table-dec a {
+  background-color: #2e323d;
+  color: #fff;
+  display: inline-block;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  margin-bottom: 20px;
+  padding: 15px 30px;
+  border-radius: 5px;
+  border: 0;
+}
+
+.standard-price a {
+  background-color: #d63138;
+}
+
+.hvr-shutter-out-vertical:hover::before, .hvr-shutter-out-vertical:focus::before, .hvr-shutter-out-vertical:active::before {
+  border-radius: 3px;
+}
+
 
