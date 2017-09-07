@@ -6,7 +6,7 @@
   </ol>
   <div class="carousel-inner" role="listbox">
     <div class="carousel-item active">
-      <%= image_tag 'slider1.jpg', class: 'fadeIn' %>
+      <%= image_tag 'slider1.jpg', class: 'animated fadeIn' %>
       <div class="carousel-caption">
         <div class="gym-slider">
           <div class="gym-single-slider">
@@ -75,7 +75,7 @@
           <div class="single-icon-img">
             <%= image_tag '02icon.png' %>
           </div>
-          <h3>heart beats</h3>
+          <h3>body building</h3>
           <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
         </div>
         <!-- single service part -->
@@ -85,7 +85,7 @@
           <div class="single-icon-img">
             <%= image_tag '03icon.png' %>
           </div>
-          <h3>heart beats</h3>
+          <h3>weight lifting</h3>
           <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
         </div>
         <!-- single service part -->
@@ -95,7 +95,7 @@
           <div class="single-icon-img">
             <%= image_tag '04icon.png' %>
           </div>
-          <h3>heart beats</h3>
+          <h3>weight loss</h3>
           <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
         </div>
         <!-- single service part -->
@@ -104,3 +104,185 @@
   </div>
 </section>
 <!-- ======= Service part end ======= -->
+<!-- ======= About gym part start ======= -->
+<section class="about-gym-area section-padding">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-5 col-md-offset-7">
+        <div class="title fadeInDown">
+          <h1>about <span>gym</span></h1>
+        </div>
+
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+        <a href="" class="gym-btn none-border hvr-shutter-out-vertical fadeIn ">learn more</a>
+      </div>
+    </div>
+  </div>
+</section>
+    <!-- ======= About gym part end ======= -->
+
+<!-- ======= Portfolio part start ======= -->
+<section id="portfolio" class="portfolio-area section-padding">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="title">
+          <h1>our <span>Portfolio</span></h1>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <div class="iso-wraper">
+
+          <!-- Portfolio Menu -->
+          <!-- <div class="iso-nav">
+            <ul>
+              <li class="hvr-shutter-out-vertical none-border portfolio-active" data-filter="*">All</li>
+              <li class="hvr-shutter-out-vertical none-border" data-filter=".gym">gym fitness</li>
+              <li class="hvr-shutter-out-vertical none-border" data-filter=".yoga">yoga</li>
+              <li class="hvr-shutter-out-vertical none-border" data-filter=".boxing">boxing</li>
+              <li class="hvr-shutter-out-vertical none-border" data-filter=".fitness">fitness</li>
+              <li class="hvr-shutter-out-vertical none-border" data-filter=".body">body</li>
+            </ul>
+          </div> -->
+          <div class="iso-content">
+            <div class="single-project gym fitness">
+              <div class="iso-overflow"></div>
+              <%= image_tag 'portfolio/01.jpg' %>
+              <div class="project-lightbox">
+                <div class="project-lightbox-middile">
+                  <%= link_to image_tag("portfolio/01.jpg"), "image.jpg", :rel => "lightbox", :title => "GYM", :data => "roadtrip" %>
+                    <i class: "fa fa-plus" aria: {hidden: true} %></i>
+                </div>
+              </div>
+            </div>
+            <!-- single-portfolio -->
+            <div class="single-project yoga">
+              <div class="iso-overflow"></div>
+              <%= image_tag 'portfolio/02.jpg' %>
+              <div class="project-lightbox">
+                <div class="project-lightbox-middile">
+                  <%= link_to image_tag("portfolio/02.jpg"), "image.jpg", :rel => "lightbox", :title => "GYM", :data => "roadtrip" %>
+                    <i class: "fa fa-plus" aria: {hidden: true} %></i>
+                </div>
+              </div>
+            </div>
+            <!-- single-portfolio -->
+            <div class="single-project gym body">
+              <div class="iso-overflow"></div>
+              <%= image_tag 'portfolio/03.jpg' %>
+              <div class="project-lightbox">
+                <div class="project-lightbox-middile">
+                <%= link_to image_tag("portfolio/03.jpg"), "image.jpg", :rel => "lightbox", :title => "GYM", :data => "roadtrip" %>
+                    <i class: "fa fa-plus" aria: {hidden: true} %></i>
+                </div>
+              </div>
+            </div>
+            <!-- single-portfolio -->
+            <div class="single-project gym fitness">
+              <div class="iso-overflow"></div>
+              <%= image_tag 'portfolio/04.jpg' %>
+              <div class="project-lightbox">
+                <div class="project-lightbox-middile">
+                <%= link_to image_tag("portfolio/04.jpg"), "image.jpg", :rel => "lightbox", :title => "GYM", :data => "roadtrip" %>
+                  <i class: "fa fa-plus" aria: {hidden: true} %></i>
+                </div>
+              </div>
+            </div>
+            <!-- single-portfolio -->
+            <div class="single-project gym fitness body">
+              <div class="iso-overflow"></div>
+              <%= image_tag 'portfolio/05.jpg' %>
+              <div class="project-lightbox">
+                <div class="project-lightbox-middile">
+                <%= link_to image_tag("portfolio/05.jpg"), "image.jpg", :rel => "lightbox", :title => "GYM", :data => "roadtrip" %>
+                  <i class: "fa fa-plus" aria: {hidden: true} %></i>
+                </div>
+              </div>
+            </div>
+            <!-- single-portfolio -->
+            <!-- <div class="single-project fitness body">
+              <div class="iso-overflow"></div>
+              <%= image_tag 'portfolio/06.jpg' %>
+              <div class="project-lightbox">
+                <div class="project-lightbox-middile">
+                  <%= link_to image_tag("portfolio/06.jpg"), "image.jpg", :rel => "lightbox", :title => "GYM", :data => "roadtrip" %>
+                    <i class: "fa fa-plus" aria: {hidden: true} %></i>
+                </div>
+              </div>
+            </div> -->
+            <!-- single-portfolio -->
+            <!-- <div class="single-project gym body">
+              <div class="iso-overflow"></div>
+              <%= image_tag 'portfolio/07.jpg' %>
+              <div class="project-lightbox">
+                <div class="project-lightbox-middile">
+                  <%= link_to image_tag("portfolio/07.jpg"), "image.jpg", :rel => "lightbox", :title => "GYM", :data => "roadtrip" %>
+                    <i class: "fa fa-plus" aria: {hidden: true} %></i>
+                </div>
+              </div>
+            </div> -->
+            <!-- single-portfolio -->
+            <!-- <div class="single-project gym">
+              <div class="iso-overflow"></div>
+              <%= image_tag 'portfolio/08.jpg' %>
+              <div class="project-lightbox">
+                <div class="project-lightbox-middile">
+                <%= link_to image_tag("portfolio/08.jpg"), "image.jpg", :rel => "lightbox", :title => "GYM", :data => "roadtrip" %>
+                  <i class: "fa fa-plus" aria: {hidden: true} %></i>
+                </div>
+              </div>
+            </div> -->
+            <!-- single-portfolio -->
+            <!-- <div class="single-project yoga boxing">
+              <div class="iso-overflow"></div>
+              <%= image_tag 'portfolio/09.jpg' %>
+              <div class="project-lightbox">
+                <div class="project-lightbox-middile">
+                  <%= link_to image_tag("portfolio/09.jpg"), "image.jpg", :rel => "lightbox", :title => "GYM", :data => "roadtrip" %>
+                    <i class: "fa fa-plus" aria: {hidden: true} %></i>
+                </div>
+              </div>
+            </div> -->
+            <!-- single-portfolio -->
+            <!-- <div class="single-project gym yoga">
+              <div class="iso-overflow"></div>
+              <%= image_tag 'portfolio/10.jpg' %>
+              <div class="project-lightbox">
+                <div class="project-lightbox-middile">
+                <%= link_to image_tag("portfolio/10.jpg"), "image.jpg", :rel => "lightbox", :title => "GYM", :data => "roadtrip" %>
+                  <i class: "fa fa-plus" aria: {hidden: true} %></i>
+                </div>
+              </div>
+            </div> -->
+            <!-- single-portfolio -->
+            <!-- <div class="single-project gym yoga">
+              <div class="iso-overflow"></div>
+              <%= image_tag 'portfolio/11.jpg' %>
+              <div class="project-lightbox">
+                <div class="project-lightbox-middile">
+                <%= link_to image_tag("portfolio/11.jpg"), "image.jpg", :rel => "lightbox", :title => "GYM", :data => "roadtrip" %>
+                  <i class: "fa fa-plus" aria: {hidden: true} %></i>
+                </div>
+              </div>
+            </div> -->
+            <!-- single-portfolio -->
+            <!-- <div class="single-project gym boxing">
+              <div class="iso-overflow"></div>
+              <%= image_tag 'portfolio/12.jpg' %>
+              <div class="project-lightbox">
+                <div class="project-lightbox-middile">
+                  <%= link_to image_tag("portfolio/12.jpg"), "image.jpg", :rel => "lightbox", :title => "GYM", :data => "roadtrip" %>
+                  <i class: "fa fa-plus" aria: {hidden: true} %></i>
+                </div>
+              </div>
+            </div> -->
+            <!-- single-portfolio -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+    <!-- ======= Portfolio part end ======= -->
