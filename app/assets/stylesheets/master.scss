@@ -19,7 +19,7 @@
 
 .menu-bg {
     background-color: rgba(0, 0, 0, 0.90) !important;
-    border-bottom: 2px solid #D63138;
+    /*border-bottom: 2px solid #D63138;*/
     padding: 0 !important;
 }
 
@@ -86,10 +86,39 @@ ul.navbar-nav a:hover {
     padding: 0 10px;
 }
 
+.gym-btn {
+  background-color: #D63138;
+  border: 1px solid #D63138;
+  color: #fff;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 800;
+  padding: 10px 25px;
+  text-transform: uppercase;
+  border-radius: 3px;
+}
+
+.gym-btn:hover {
+  color: #fff;
+}
+
+.gym-btn.join-btn {
+  font-size: 12px;
+  font-weight: 700;
+  padding: 8px 15px;
+  position: absolute;
+  right: 13px;
+  top: 15px;
+}
+
+
+
 /***** ----- slider part start ----- *****/
 
-.carousel-inner {
-    height: 100vh;
+.carousel-inner > .carousel-item > img, .carousel-inner > .carousel-item > a > img {
+    /*height: 100%;*/
+    width: 100%;
+    animation-delay: 0.5s;
 }
 
 .carousel.slide {
@@ -114,9 +143,9 @@ ul.navbar-nav a:hover {
     z-index: 9;
 }
 
-.item img {
-    width: 100%;
-    animation-delay: 0.5s;
+ .fadeIn {
+  -webkit-animation-name:fadeIn;
+  animation-name:fadeIn;
 }
 
 .gym-slider {
@@ -187,3 +216,5 @@ ul.navbar-nav a:hover {
 .hvr-shutter-out-vertical::before {
     background: #000;
 }
+
+
