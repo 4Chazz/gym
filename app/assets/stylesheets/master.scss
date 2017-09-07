@@ -1,3 +1,189 @@
 @import 'bootstrap';
 @import 'font-awesome';
 
+
+.header-area {
+    position: fixed;
+    width: 100%;
+    z-index: 99999;
+    padding: 5px 0;
+    top: 0;
+    left: 0;
+    transition: all 0.5s ease 0s;
+}
+
+.logo img {
+    max-width: 100%;
+    padding: 10px 0;
+}
+
+.menu-bg {
+    background-color: rgba(0, 0, 0, 0.90) !important;
+    border-bottom: 2px solid #D63138;
+    padding: 0 !important;
+}
+
+.menu-part {
+    display: inline-block;
+    text-align: center;
+    width: 90%;
+}
+.navbar-collapse {
+    padding: 0;
+}
+ul.navbar-nav {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    border: 0 none;
+}
+
+ul.navbar-nav li {
+    display: inline-block;
+    list-style: outside none none;
+    padding: 20px 0;
+}
+
+ul.navbar-nav li a {
+    border: 0 none !important;
+    color: #fff !important;
+    font-weight: 700;
+    font-size: 14px;
+    padding: 0 !important;
+    text-transform: uppercase;
+    transition: all 1s ease 0s;
+}
+
+ul.navbar-nav a:hover {
+    color: #D63138;
+}
+
+.navbar-default, .navbar-nav>, .active>a,
+.navbar-default .navbar-nav>.active>a:focus,
+.navbar-default .navbar-nav>.active>a:hover {
+    background-color: transparent !important;
+    color: #D63138 !important;
+}
+
+.navbar-default .navbar-nav>li>a:focus,
+.navbar-default .navbar-nav>li>a:hover {
+    color: #D63138 !important;
+    background-color: transparent !important;
+}
+
+.navbar-default {
+  background-color: transparent;
+  border: 0 none;
+  margin: 0;
+}
+
+.navbar-toggle {
+  display: block;
+}
+
+.separet {
+    color: #D63138;
+    padding: 0 10px;
+}
+
+/***** ----- slider part start ----- *****/
+
+.carousel-inner {
+    height: 100vh;
+}
+
+.carousel.slide {
+    background: #000;
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel-caption {
+    width: 100%;
+    left: 0;
+    top: 0;
+    padding: 0;
+}
+
+.item::before {
+    background: rgba(0, 0, 0, 0.5);
+    content: "";
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    z-index: 9;
+}
+
+.item img {
+    width: 100%;
+    animation-delay: 0.5s;
+}
+
+.gym-slider {
+    display: table;
+    width: 100%;
+}
+
+.gym-single-slider {
+    display: table-cell;
+    height: 100vh;
+    vertical-align: middle;
+    text-transform: uppercase;
+}
+
+.gym-single-slider h1 {
+    font-size: 65px;
+    font-weight: 800;
+    margin-bottom: 5px;
+    animation-delay: 0.5s;
+}
+
+.gym-single-slider span {
+    color: #D63138;
+}
+
+.gym-single-slider h2 {
+    font-size: 50px;
+    font-style: normal;
+    animation-delay: 0.5s;
+}
+
+.gym-single-slider a.gym-btn {
+    animation-delay: 1s;
+}
+
+.transparent-btn {
+    background-color: transparent;
+}
+
+.carousel-indicators li {
+    background-color: #D63138;
+    border: 1px solid #D63138;
+    border-radius: 0;
+    cursor: pointer;
+}
+
+.carousel-indicators .active {
+    background-color: #FFF;
+    border: 1px solid #D63138;
+}
+
+.hvr-shutter-in-vertical::before {
+    background-color: #D63138;
+    transform: scaleY(0);
+}
+
+.hvr-shutter-in-vertical:hover::before,
+.hvr-shutter-in-vertical:focus::before,
+.hvr-shutter-in-vertical:active::before {
+    background-color: #D63138;
+    transform: scaleY(1);
+}
+
+.hvr-shutter-out-vertical {
+    background-color: #D63138;
+}
+
+.hvr-shutter-out-vertical::before {
+    background: #000;
+}

@@ -10,6 +10,47 @@
   </head>
 
   <body>
+    <header class="header-area menu-bg">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-5 col-sm-2 col-md-2">
+
+            <div class="logo">
+              <a href="#">
+                <%= image_tag 'logo.png' %>
+              </a>
+            </div>
+          </div>
+    <div class="col-xs-7 col-sm-10 col-md-10">
+    <!-- <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1"> -->
+
+    <nav class="navbar navbar-default">
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- <div class="collapse navbar-collapse" id="navbarTogglerDemo02"> -->
+        <ul class="navbar-nav mr-auto mt-2 mt-md-0">
+        <!-- <li class="nav-item"> -->
+        <li class="active"><a class="smooth-scroll" href="#top">home</a></li>
+        <li><a class="smooth-scroll" href="#services"><span class="separet">/</span> services</a></li>
+        <li><a class="smooth-scroll" href="#portfolio"><span class="separet">/</span> portfolio</a></li>
+        <li><a class="smooth-scroll" href="#about"><span class="separet">/</span> about us</a></li>
+        <li><a class="smooth-scroll" href="#trainer"><span class="separet">/</span> trainer</a></li>
+        <li><a class="smooth-scroll" href="#price"><span class="separet">/</span> price</a></li>
+        <li><a class="smooth-scroll" href="#schedule"><span class="separet">/</span> schedule</a></li>
+        <li><a class="smooth-scroll" href="#contact"><span class="separet">/</span> contact us</a></li>
+      </ul>
+      <!-- </div> -->
+    </div>
+    </nav>
+    </div>
+    </div>
+    </div>
+    </header>
+
+
+
     <%= yield %>
   </body>
 </html>

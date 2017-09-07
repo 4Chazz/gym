@@ -1,14 +1,35 @@
-<header class="header-area menu-bg">
-  <div class="container">
-    <div class="row">
-      <div class="col-xs-5 col-sm-2 col-md-2">
-        <!-- Header logo -->
-        <div class="logo">
-          <a href="#">
-            <%= image_tag 'logo.png' %>
-          </a>
-        </div>
-      </div>
-    <div class="col-xs-7 col-sm-10 col-md-10">
-
-</header>
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner" role="listbox">
+    <div class="carousel-item active">
+      <%= image_tag 'slider1.jpg', class: 'd-block img-fluid' %>
+      <!-- <div class="carousel-caption d-none d-md-block">
+        <h3>Find the best restraunts</h3>
+      </div> -->
+    </div>
+    <div class="carousel-item">
+      <%= image_tag 'slider2.jpg', class: 'd-block img-fluid' %>
+      <!-- <div class="carousel-caption d-none d-md-block">
+        <h3>Eat out with friends</h3>
+      </div> -->
+    </div>
+    <div class="carousel-item">
+      <%= image_tag 'slider3.jpg', class: 'd-block img-fluid' %>
+      <!-- <div class="carousel-caption d-none d-md-block">
+        <h3>Variety for your appetite</h3>
+      </div> -->
+    </div>
+  </div>
+  <!-- <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a> -->
+</div>
