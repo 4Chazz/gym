@@ -831,4 +831,313 @@ span i.fa {
 }
 
 
+/***** ----- Contact part start ----- *****/
+
+.contact-title h1 {
+    color: #fff;
+}
+
+.contact-part-area {
+    background: rgba(0, 0, 0, 0) image_url('contact-bg.png') no-repeat scroll center top / cover;
+    position: relative;
+}
+
+.contact-part-area::before {
+    background: rgba(3, 3, 3, 0.91);
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    width: 100%;
+    height: 100%;
+}
+
+.contact-logo {
+    text-align: center;
+}
+
+.contact-form {
+    text-align: center;
+}
+
+.form-content input {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: transparent;
+    border-color: currentcolor currentcolor #D63138;
+    border-image: none;
+    border-style: none none solid;
+    border-width: medium medium 1px;
+    color: #fff;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 14px;
+    height: 50px;
+    letter-spacing: 1px;
+    padding-left: 10px;
+    width: 100%;
+    outline: none;
+}
+
+textarea {
+    background-color: transparent;
+    border: 1px solid #D63138;
+    color: #fff;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: bold;
+    height: 200px;
+    letter-spacing: 1px;
+    margin-bottom: 25px;
+    margin-top: 30px;
+    outline: medium none;
+    overflow: hidden;
+    padding: 10px;
+    width: 100%;
+}
+
+.sent-button {
+    background-color: #D63138;
+    border: 2px solid #D63138;
+    border-radius: 3px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    padding: 10px 40px;
+}
+
+
+/***** ----- Contact part end ----- *****/
+
+
+/***** ----- Footer part start----- *****/
+
+.footer-top-area {
+    background-color: #121212;
+}
+
+.footer-top {
+    overflow: hidden;
+}
+
+.footer-text img {
+    margin-bottom: 35px;
+    max-width: 100%;
+}
+
+.footer-text p {
+    color: #fff;
+    font-weight: 300;
+}
+
+.footer-heading {
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+
+.footer-heading h2::after {
+    background-color: #fff;
+    bottom: 0;
+    content: "";
+    height: 2px;
+    left: 0;
+    position: absolute;
+    width: 50px;
+}
+
+.footer-heading h2 {
+    color: #D63138;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-bottom: 50px;
+    padding: 0 0 10px;
+    position: relative;
+    text-transform: uppercase;
+}
+
+.footer-recent-post.footer-heading ul li:first-child {
+    padding-top: 0;
+}
+
+.footer-recent-post.footer-heading ul li {
+    border-bottom: 1px solid #D63138;
+    color: #fff;
+    display: block;
+    padding-bottom: 15px;
+    padding-left: 30px;
+    padding-top: 10px;
+    position: relative;
+}
+
+.footer-heading address ul li i.fa {
+    color: #D63138;
+    font-size: 16px;
+    left: 0;
+    position: absolute;
+}
+
+.footer-recent-post.footer-heading a {
+    color: #fff;
+}
+
+.footer-recent-post.footer-heading a:hover {
+    color: #D63138;
+}
+
+.recent-area {
+    background-color: #e6e7e8;
+    box-sizing: border-box;
+    float: left;
+    height: 77px;
+    margin: 5px;
+    position: relative;
+    transition: all 1s ease 0s;
+    width: 77px;
+}
+
+.recent-area img {
+    max-width: 100%;
+}
+
+.footer-overflow {
+    height: 100%;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    transition: 1s;
+    background-color: #D63138;
+}
+
+.recent-area:hover .footer-overflow {
+    opacity: 0.8;
+    cursor: url('../images/cur.png'), crosshair;
+}
+
+.footer-social-about a p {
+    color: #fff;
+}
+
+.footer-social-about a p:hover {
+    opacity: 0.8;
+}
+
+.footer-social-about span {
+    color: #D63138;
+}
+
+.sub {
+    float: left;
+    margin-top: 30px;
+    text-align: center;
+    width: 100%;
+}
+
+.sub input {
+    color: #fff;
+    height: 34px;
+    width: 80%;
+    background-color: #D63138;
+    border: 0;
+    padding-left: 15px;
+    outline: none;
+    float: left;
+}
+
+.sub button {
+    background-color: #d63138;
+    border: 0 none;
+    border-radius: 3px;
+    color: #fff;
+    font-size: 25px;
+    height: 35px;
+    width: 18%;
+    float: right;
+}
+
+.sub button i.fa {
+    position: absolute;
+    left: 30%;
+    top: -5px;
+}
+
+
+/*Scroll top part start*/
+
+#scrollUp {
+    background: #d63138 none repeat scroll 0 0;
+    border-radius: 3px;
+    bottom: 40px;
+    font-size: 20px;
+    padding: 5px 0;
+    right: 20px;
+    transition: all 0.5s ease 0s;
+    z-index: 9999 !important;
+}
+
+#scrollUp:hover {
+    background-color: #fff;
+}
+
+#scrollUp:hover .hvr-icon-bob::before {
+    color: #D63138;
+}
+
+.hvr-icon-bob::before {
+    animation-delay: 0s, 0.3s;
+    animation-direction: normal, alternate;
+    animation-duration: 0.3s, 1.5s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1, infinite;
+    animation-name: hvr-icon-bob-float, hvr-icon-bob;
+    animation-timing-function: ease-out, ease-in-out;
+    right: 11px;
+    top: -15px;
+    color: #fff;
+    transition: all 0.5s ease 0s;
+}
+
+
+/*Scroll top part end*/
+
+.fotter-bottom-area {
+    background-color: #000;
+    position: relative;
+}
+
+.reserve-area {
+    color: #fff;
+    font-weight: bold;
+    letter-spacing: 1px;
+    padding: 20px 0;
+}
+
+.reserve-area span {
+    color: #D63138;
+}
+
+.social-link a i {
+    background-color: #D63138;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 16px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    transition: all 1s ease 0s;
+    width: 30px;
+}
+
+.social-link a i:hover {
+    background-color: #fff;
+    color: #D63138;
+}
+
+
+/***** ----- Footer part end ----- *****/
 
