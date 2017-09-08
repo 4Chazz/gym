@@ -16,5 +16,5 @@
 //= require popper
 //= require tether
 //= require bootstrap-sprockets
-//= require slick
+//= require jquery.slick
 //= require_tree .

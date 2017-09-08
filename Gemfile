@@ -66,4 +66,4 @@ gem 'wow-rails'
 
 gem 'animate-rails'
 
-gem 'slick_rails'
+gem 'jquery-slick-rails'
