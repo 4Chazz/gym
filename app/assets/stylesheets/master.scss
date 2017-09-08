@@ -669,7 +669,7 @@ ul.navbar-nav a:hover {
 
 /***** ----- schedule part start ----- *****/
 
-.schedule-title {
+/*.schedule-title {
   background-color: #2e323d;
   color: #fff;
   font-size: 18px;
@@ -766,7 +766,7 @@ span i.fa {
   height: 50px;
 }
 
-
+*/
 /***** ----- schedule part end ----- *****/
 
 
@@ -830,34 +830,5 @@ span i.fa {
   color: #ffd700;
 }
 
-.slick-prev::before,
-.slick-next::before {
-  background-color: #D63138;
-  font-family: "fontawesome";
-  padding: 5px 10px;
-}
-
-.slick-prev::before {
-  content: "\f100";
-}
-
-.slick-next::before {
-  content: "\f101";
-}
-
-.slick-prev {
-  height: 32px;
-  left: 49%;
-  width: 31px;
-  z-index: 999;
-  margin-top: 35px;
-}
-
-.slick-next {
-  width: 31px;
-  height: 32px;
-  right: 45%;
-  margin-top: 35px;
-}
 
 
