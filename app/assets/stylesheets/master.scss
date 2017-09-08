@@ -665,4 +665,197 @@ ul.navbar-nav a:hover {
   border-radius: 3px;
 }
 
+/***** ----- schedule part start ----- *****/
+
+.schedule-title {
+  background-color: #2e323d;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  padding: 15px 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.schedule-title span {
+  font-size: 30px;
+  font-style: italic;
+  margin: 0 10px;
+}
+
+.schedule-timing {
+  background-color: #D63138;
+  padding: 50px;
+}
+
+.schedule-timing h2 {
+  color: #fff;
+  font-size: 30px;
+  font-style: italic;
+  font-weight: 300;
+  padding: 0 0 20px;
+  text-transform: uppercase;
+}
+
+.schedule-timing li {
+  border-top: 1px solid #fff;
+  color: #fff;
+  font-size: 15px;
+  line-height: 40px;
+  list-style: outside none none;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.schedule-timing li:last-child {
+  border-bottom: 1px solid #fff;
+}
+
+.schedule-timing ul li span {
+  float: left;
+}
+
+span i.fa {
+  margin-right: 20px;
+}
+
+.schedule-timing a {
+  background-color: #2e323d;
+  border-radius: 3px;
+  box-sizing: border-box;
+  color: #fff;
+  float: right;
+  text-align: center;
+  text-transform: uppercase;
+  width: 150px;
+}
+
+.unavailable {
+  opacity: 0.6;
+}
+
+.schedule-area .schedule button.slick-prev::before,
+.schedule-area .schedule button.slick-next::before {
+  background-color: transparent;
+  font-size: 50px;
+}
+
+.schedule-area .schedule button.slick-prev::before {
+  content: "";
+}
+
+.schedule-area .schedule button.slick-next::before {
+  content: "";
+}
+
+.schedule-area .schedule button.slick-prev {
+  left: 10%;
+  margin: 0;
+  top: 6%;
+  width: 50px;
+  height: 50px;
+}
+
+.schedule-area .schedule button.slick-next {
+  margin: 0;
+  right: 10%;
+  top: 6%;
+  width: 50px;
+  height: 50px;
+}
+
+
+/***** ----- schedule part end ----- *****/
+
+
+/***** ----- Client part start ----- *****/
+
+.client-area {
+  background-color: #f1f1f1;
+}
+
+.client-part {
+  display: inline-block;
+  width: 100%;
+}
+
+.client-dec {
+  display: inline-block;
+  padding: 25px 135px;
+  text-align: center;
+  width: 100%;
+}
+
+.client-img {
+  float: left;
+  position: relative;
+  width: 15%;
+}
+
+.client-img img {
+  max-width: 100%;
+  position: relative;
+}
+
+.client-content {
+  float: right;
+  text-align: right;
+  width: 85%;
+}
+
+.client-content p::before {
+  content: "";
+  font-family: fontawesome;
+  margin-right: 10px;
+  color: #bdbdbd;
+}
+
+.client-content p::after {
+  content: "";
+  font-family: fontawesome;
+  margin-left: 10px;
+  color: #bdbdbd;
+}
+
+.client-content h3 {
+  color: #000000;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.client-content i.fa {
+  color: #ffd700;
+}
+
+.slick-prev::before,
+.slick-next::before {
+  background-color: #D63138;
+  font-family: "fontawesome";
+  padding: 5px 10px;
+}
+
+.slick-prev::before {
+  content: "\f100";
+}
+
+.slick-next::before {
+  content: "\f101";
+}
+
+.slick-prev {
+  height: 32px;
+  left: 49%;
+  width: 31px;
+  z-index: 999;
+  margin-top: 35px;
+}
+
+.slick-next {
+  width: 31px;
+  height: 32px;
+  right: 45%;
+  margin-top: 35px;
+}
+
 

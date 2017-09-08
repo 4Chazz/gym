@@ -65,3 +65,5 @@ end
 gem 'wow-rails'
 
 gem 'animate-rails'
+
+gem 'slick_rails'
