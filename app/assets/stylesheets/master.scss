@@ -192,6 +192,16 @@ ul.navbar-nav a:hover {
   display: block;
 }
 
+.navbar-toggler {
+    border-color: rgb(255,102,203);
+    background-color: #f26dc5;
+
+}
+
+ .navbar-toggler-icon {
+  float: left;
+}
+
 .separet {
     color: #D63138;
     padding: 0 10px;
