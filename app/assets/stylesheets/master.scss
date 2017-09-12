@@ -860,6 +860,26 @@ span i.fa {
     text-align: center;
 }
 
+.simple_form input {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: transparent;
+    border-color: currentcolor currentcolor #D63138;
+    border-image: none;
+    border-style: none none solid;
+    border-width: medium medium 1px;
+    color: #fff;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 14px;
+    height: 50px;
+    letter-spacing: 1px;
+    padding-left: 10px;
+    width: 100%;
+    outline: none;
+}
 .form-content input {
     -moz-border-bottom-colors: none;
     -moz-border-left-colors: none;
