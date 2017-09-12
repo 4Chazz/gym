@@ -521,23 +521,26 @@
     <div class="row">
       <div class="col-md-12">
         <div class="contact-form">
-          <form action="form.php" method="post" name="form">
+
             <div class="row">
               <div class="col-sm-6 col-md-6">
-                <div class="form-content">
-                  <input name="name" placeholder="YOUR NAME" type="text" required>
+                <div class="simple_form">
+                  <%= simple_form_for @contact do |f| %>
+                    <%= f.input_field :name, placeholder: 'YOUR NAME', label:false %>
+
                 </div>
               </div>
               <div class="col-sm-6 col-md-6">
-                <div class="form-content">
-                  <input name="email" placeholder="YOUR EMAIL" type="email" >
+                <div class="simple_form">
+                    <%= f.input_field :email, placeholder: 'YOUR EMAIL', label:false%>
                 </div>
               </div>
             </div>
             <div class="row">
               <div class="col-sm-6 col-md-6">
-                <div class="form-content">
-                  <input name="phone" placeholder="YOUR PHONE NUMBER" type="tel" required>
+                <div class="simple_form">
+                    <%= f.input_field :phone, placeholder: 'YOUR PHONE NUMBER', label:false%>
+
                 </div>
               </div>
               <!-- <div class="col-sm-6 col-md-6">
@@ -548,13 +551,14 @@
             </div>
             <div class="row">
               <div class="col-md-12">
-                <div class="form-message">
-                  <textarea class="field-element " data-gramm="true" spellcheck="false" data-gramm_editor="true" name="msg" placeholder="YOUR MESSGE GOES HERE..." required></textarea>
+                <div class="form-message textarea">
+                    <%= f.input_field :message, placeholder: "YOUR MESSGE GOES HERE...", label:false%>
                 </div>
-                <button type="submit" name="submit" class="sent-button hvr-shutter-out-vertical wow fadeIn">SEND</button>
+                    <%= f.submit 'SEND', class: "sent-button hvr-shutter-out-vertical wow fadeIn" %>
+                  <% end %>
               </div>
             </div>
-          </form>
+
         </div>
       </div>
     </div>
