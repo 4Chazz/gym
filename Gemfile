@@ -67,3 +67,5 @@ gem 'wow-rails'
 gem 'animate-rails'
 
 gem 'jquery-slick-rails'
+
+gem 'simple_form'
