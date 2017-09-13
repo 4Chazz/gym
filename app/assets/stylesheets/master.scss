@@ -7,6 +7,25 @@
 
 /***** ----- Global part start ----- *****/
 
+
+
+  /*@media (min-width:1200px) {
+  .container {
+  width:1170px;*/
+  /*height: 66px;
+}
+  }*/
+
+/*@media (min-width:1200px) {
+  .navcontainer {
+  width:1170px;
+  height: 66px;
+}
+  }*/
+
+
+
+
 .box{
   width: 100px;
   height: 100px;
@@ -122,7 +141,7 @@ h2 {
 /***** ----- About gym part start ----- *****/
 
 .about-gym-area {
-  background: #f1f1f1 image_url('about-gym-bg.png') no-repeat fixed left center / contain;
+  background: #f1f1f1 image_url('about-gym.jpg') no-repeat fixed left center / contain;
   position: relative;
 }
 
