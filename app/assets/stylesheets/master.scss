@@ -21,6 +21,12 @@ a:focus, a:hover {
     text-decoration: none;
 }
 
+* {
+  -webkit-box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  box-sizing:border-box;
+  }
+
 p {
     font-size: 15px;
     color: #484848;
@@ -100,6 +106,9 @@ h2 {
     color: #D63138;
 }
 
+.col-md-offset-7 {
+  margin-left:58.33333333%;
+  }
 /***** ----- About gym part start ----- *****/
 
 .about-gym-area {
@@ -227,15 +236,20 @@ ul.navbar-nav a:hover {
 /***** ----- slider part start ----- *****/
 
 .carousel-inner > .carousel-item > img, .carousel-inner > .carousel-item > a > img {
-    /*height: 100%;*/
+    height: 100vh;
     width: 100%;
     animation-delay: 0.5s;
+    backface-visibility:hidden;
+    position: relative;
+    overflow: hidden;
+      overflow-x: hidden;
+      overflow-y: hidden;
 }
 
 .carousel.slide {
     background: #000;
     position: relative;
-    overflow: hidden;
+    /*overflow: hidden;*/
 }
 
 .carousel-caption {
@@ -299,6 +313,8 @@ ul.navbar-nav a:hover {
 .carousel-indicators li {
     background-color: #D63138;
     border: 1px solid #D63138;
+    width: 10px;
+    height: 10px;
     border-radius: 0;
     cursor: pointer;
 }
@@ -306,6 +322,12 @@ ul.navbar-nav a:hover {
 .carousel-indicators .active {
     background-color: #FFF;
     border: 1px solid #D63138;
+    width: 12px;
+    height: 12px;
+}
+
+.carousel-indicators {
+  bottom: 20px;
 }
 
 .hvr-shutter-in-vertical::before {
