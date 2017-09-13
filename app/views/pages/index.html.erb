@@ -367,41 +367,43 @@
         </div>
       </div>
     </div>
-    <div class="row">
-      <div class="col-md-12">
-        <div class="client-part">
-          <div class="client-dec">
-            <div class="client-img">
-              <%= image_tag'client/01.jpg'%>
+    <div class="client-part">
+      <div class="container">
+        <div id="carouselContent" class="client-dec" data-ride="carousel">
+          <div class="carousel-inner" role="listbox">
+            <div class="carousel-item active fadeIn">
+              <div class="client-img">
+                <%=image_tag'client/01.jpg'%>
+              </div>
+                <p class="txtrt">"Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry"</p>
+                <h3>- peter smith</h3>
+
             </div>
-            <div class="client-content animated slideInRight">
-              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
-              <h3>- peter smith</h3>
+
+            <div class="carousel-item fadeIn">
+              <div class="client-img">
+                <%=image_tag'client/02.jpg'%>
+              </div>
+            <p class="txtrt">"I feel like a new person."</p>
+            <h3>- Mary Quinn</h3>
             </div>
-          </div>
-          <!--  single client  -->
-          <div class="client-dec">
-            <div class="client-img">
-              <!-- <div class="rotation"></div> -->
-              <%= image_tag'client/02.jpg'%>
-            </div>
-            <div class="client-content animated slideInRight">
-              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
-              <h3>- Mary Quail</h3>
-            </div>
-          </div>
-          <!--  single client  -->
-          <div class="client-dec">
-            <div class="client-img">
-              <!-- <div class="rotation"></div> -->
-              <%= image_tag'client/03.jpg'%>
-            </div>
-            <div class="client-content animated slideInRight">
-              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
-              <h3>- Tim Cryer</h3>
+
+            <div class="carousel-item fadeIn">
+              <div class="client-img">
+                <%=image_tag'client/03.jpg'%>
+              </div>
+            <p class="txtrt">"Lorem Ipsum is simply dummy text of the printing and typesetting industry."</p>
+            <h3>- Tim Cryer</h3>
             </div>
           </div>
-          <!--  single client  -->
+           <a class="clcarousel-control-prev" href="#carouselContent" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselContent" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+          </a>
         </div>
       </div>
     </div>
@@ -484,7 +486,7 @@
                 <li><i class="fa fa-map-marker" aria-hidden="true"></i> 100 Main St, Dallas, Texas</li>
                     <li><i class="fa fa-volume-control-phone" aria-hidden="true"></i> (214) 555 2476</li>
                     <!-- <li><i class="fa fa-fax" aria-hidden="true"></i> (256) 451 6556</li> -->
-                    <li><i class="fa fa-envelope" aria-hidden="true"></i> <a href="#">contact@example.com</a></li>
+                    <li><i class="fa fa-envelope" aria-hidden="true"></i> <a href="mailto:">contact@example.com</a></li>
               </ul>
             </address>
           </div>
