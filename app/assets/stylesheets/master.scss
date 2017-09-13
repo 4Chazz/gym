@@ -9,23 +9,6 @@
 
 
 
-  /*@media (min-width:1200px) {
-  .container {
-  width:1170px;*/
-  /*height: 66px;
-}
-  }*/
-
-/*@media (min-width:1200px) {
-  .navcontainer {
-  width:1170px;
-  height: 66px;
-}
-  }*/
-
-
-
-
 .box{
   width: 100px;
   height: 100px;
@@ -88,7 +71,9 @@ h2 {
     color: inherit;
 }
 
-.about-us-img::before, .client-img::before {
+
+
+.about-us-img::before {
     background-color: #D63138;
     height: 100%;
     position: absolute;
@@ -720,108 +705,6 @@ ul.navbar-nav a:hover {
   border-radius: 3px;
 }
 
-/***** ----- schedule part start ----- *****/
-
-/*.schedule-title {
-  background-color: #2e323d;
-  color: #fff;
-  font-size: 18px;
-  font-weight: 700;
-  padding: 15px 0;
-  text-align: center;
-  text-transform: uppercase;
-}
-
-.schedule-title span {
-  font-size: 30px;
-  font-style: italic;
-  margin: 0 10px;
-}
-
-.schedule-timing {
-  background-color: #D63138;
-  padding: 50px;
-}
-
-.schedule-timing h2 {
-  color: #fff;
-  font-size: 30px;
-  font-style: italic;
-  font-weight: 300;
-  padding: 0 0 20px;
-  text-transform: uppercase;
-}
-
-.schedule-timing li {
-  border-top: 1px solid #fff;
-  color: #fff;
-  font-size: 15px;
-  line-height: 40px;
-  list-style: outside none none;
-  padding: 10px 0;
-  text-align: center;
-}
-
-.schedule-timing li:last-child {
-  border-bottom: 1px solid #fff;
-}
-
-.schedule-timing ul li span {
-  float: left;
-}
-
-span i.fa {
-  margin-right: 20px;
-}
-
-.schedule-timing a {
-  background-color: #2e323d;
-  border-radius: 3px;
-  box-sizing: border-box;
-  color: #fff;
-  float: right;
-  text-align: center;
-  text-transform: uppercase;
-  width: 150px;
-}
-
-.unavailable {
-  opacity: 0.6;
-}
-
-.schedule-area .schedule button.slick-prev::before,
-.schedule-area .schedule button.slick-next::before {
-  background-color: transparent;
-  font-size: 50px;
-}
-
-.schedule-area .schedule button.slick-prev::before {
-  content: "";
-}
-
-.schedule-area .schedule button.slick-next::before {
-  content: "";
-}
-
-.schedule-area .schedule button.slick-prev {
-  left: 10%;
-  margin: 0;
-  top: 6%;
-  width: 50px;
-  height: 50px;
-}
-
-.schedule-area .schedule button.slick-next {
-  margin: 0;
-  right: 10%;
-  top: 6%;
-  width: 50px;
-  height: 50px;
-}
-
-*/
-/***** ----- schedule part end ----- *****/
-
 
 /***** ----- Client part start ----- *****/
 
@@ -847,10 +730,29 @@ span i.fa {
   width: 15%;
 }
 
+/*.client-img::before {
+    background-color: #D63138;
+    height: 110%;
+    position: absolute;
+    width: 110%;
+    content: "";
+    left: 0;
+    top: 0;
+    transform: rotate(-10deg);
+}*/
+
 .client-img img {
   max-width: 100%;
   position: relative;
+  /*brder part*/
+  border-color: #d63138;
+  border-width: 15px;
+  -moz-border-image: image_url('client/bckgnd.png') 50 stretch;
+  border-image: image_url('client/bckgnd.png') 50 stretch;
+  border-style: solid;
+  margin: auto;
 }
+
 
 .client-content {
   float: right;
@@ -881,6 +783,22 @@ span i.fa {
 
 .client-content i.fa {
   color: #ffd700;
+}
+
+.clcarousel-inner > .clcarousel-item > img, .clcarousel-inner > .clcarousel-item > a > img {
+  display: block;
+  height: auto;
+  width: 100%;
+  animation-delay: 0.5s;
+  backface-visibility:hidden;
+  position: relative;
+  overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.txtrt {
+  margin-left: 200px;
 }
 
 
@@ -1089,7 +1007,7 @@ textarea {
 
 .recent-area:hover .footer-overflow {
     opacity: 0.8;
-    cursor: url('../images/cur.png'), crosshair;
+    cursor: image_url('cur.png'), crosshair;
 }
 
 .footer-social-about a p {
