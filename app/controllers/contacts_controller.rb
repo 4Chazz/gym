@@ -6,13 +6,6 @@ class ContactsController < ApplicationController
 
   def create
     @contact = Contact.create(contact_params)
-
-    # if @contact.saved?
-    #   flash[:notice] = "Thanks! We'll be in touch soon!"
-
-    # else
-    #   flash[:alert] = "Error Sending. Recheck the form"
-    # end
       redirect_to root_path
   end
 
