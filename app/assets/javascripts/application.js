@@ -12,10 +12,12 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require jquery.scrollUp.min
 //= require turbolinks
 //= require popper
 //= require tether
 //= require jquery.slick
+//= require lightbox.min
 //= require bootstrap-sprockets
 
 //= require_tree .

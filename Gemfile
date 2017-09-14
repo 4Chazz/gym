@@ -69,3 +69,5 @@ gem 'animate-rails'
 gem 'jquery-slick-rails'
 
 gem 'simple_form'
+
+
