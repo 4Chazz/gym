@@ -48,14 +48,11 @@
       </div>
     </header>
 
-        <% if flash[:notice] %>
-            <div class="alert alert-danger"><%= flash[:notice] %></div>
+        <% flash.each do |name, msg| %>
+          <div class='alert alert-<%= name %>'>
+            <%= msg %>
+          </div>
         <% end %>
-
-        <% if flash[:error] %>
-            <div class="alert alert-info"><%= flash[:error] %></div>
-        <% end %>
-
       <%= yield %>
   </body>
 </html>

@@ -8,6 +8,11 @@
   </head>
 
   <body>
-    <%= yield %>
+    <p>New message from Total Venom website!, from <%= "#{@contact.name}, #{@contact.email}" %></p>
+      </br>
+      <p><%= @contact.name %></p>
+      <p><%= @contact.phone %></p>
+      <p><%= @contact.message %></p>
+
   </body>
 </html>
