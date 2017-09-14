@@ -262,8 +262,12 @@ ul.navbar-nav a:hover {
 
 }
 
+.botbckg {
+  background: #000;
+}
+
 .carousel.slide {
-    background: #000;
+    /*background: #000;*/
     position: relative;
     /*overflow: hidden;*/
 }
@@ -333,6 +337,7 @@ ul.navbar-nav a:hover {
     height: 10px;
     border-radius: 0;
     cursor: pointer;
+    bottom: 50px;
 }
 
 .carousel-indicators .active {
@@ -342,9 +347,7 @@ ul.navbar-nav a:hover {
     height: 12px;
 }
 
-.carousel-indicators {
-  bottom: 50px;
-}
+
 
 .hvr-shutter-in-vertical::before {
     background-color: #D63138;
@@ -730,16 +733,6 @@ ul.navbar-nav a:hover {
   width: 15%;
 }
 
-/*.client-img::before {
-    background-color: #D63138;
-    height: 110%;
-    position: absolute;
-    width: 110%;
-    content: "";
-    left: 0;
-    top: 0;
-    transform: rotate(-10deg);
-}*/
 
 .client-img img {
   max-width: 100%;
@@ -760,19 +753,6 @@ ul.navbar-nav a:hover {
   width: 85%;
 }
 
-.client-content p::before {
-  content: "";
-  font-family: fontawesome;
-  margin-right: 10px;
-  color: #bdbdbd;
-}
-
-.client-content p::after {
-  content: "";
-  font-family: fontawesome;
-  margin-left: 10px;
-  color: #bdbdbd;
-}
 
 .client-content h3 {
   color: #000000;
@@ -785,21 +765,19 @@ ul.navbar-nav a:hover {
   color: #ffd700;
 }
 
-.clcarousel-inner > .clcarousel-item > img, .clcarousel-inner > .clcarousel-item > a > img {
-  display: block;
-  height: auto;
-  width: 100%;
-  animation-delay: 0.5s;
-  backface-visibility:hidden;
-  position: relative;
-  overflow: hidden;
-    overflow-x: hidden;
-    overflow-y: hidden;
+.carousel-control-next-icon {
+    background-image : url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23ff0000' viewBox='0 0 8 8'%3E%3Cpath d='M1.5 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+    color: black;
+}
+
+.carousel-control-prev-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23ff0000' viewBox='0 0 8 8'%3E%3Cpath d='M4 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
 }
 
 .txtrt {
   margin-left: 200px;
 }
+
 
 
 /***** ----- Contact part start ----- *****/
