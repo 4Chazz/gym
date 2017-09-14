@@ -18,6 +18,9 @@
 //= require tether
 //= require jquery.slick
 //= require lightbox.min
+// require jquery.waypoints.min
+//= require jquery.parallax-1.1.3
+// require waypoints/jquery.waypoints.min.js
 //= require bootstrap-sprockets
 
 //= require_tree .

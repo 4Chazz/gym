@@ -70,4 +70,6 @@ gem 'jquery-slick-rails'
 
 gem 'simple_form'
 
+gem 'waypoints_rails'
+
 

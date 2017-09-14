@@ -1,10 +1,10 @@
 (function ($) {
 	"use strict";
 	$(document).on('ready', function () {
-		
+
 
 		/*-------------------------------------
-		    Scroll Menu Background Color 
+		    Scroll Menu Background Color
 		-------------------------------------*/
 
 		$(window).on('scroll', function () {
@@ -27,69 +27,7 @@
 			e.preventDefault();
 		});
 
-		/*-------------------------------------
-		    Circle Progress
-		-------------------------------------*/
 
-		function animateProgressBar() {
-			// First circle Progress
-			$('.first.circle').circleProgress({
-				value: 0.75,
-				size: 150,
-				startAngle: 3,
-				thickness: 5,
-				emptyFill: "#000",
-				animation: {
-					duration: 2200
-				},
-				fill: {
-					color: "#D63138"
-				}
-			}).on('circle-animation-progress', function (event, progress) {
-				$(this).find('strong').html(Math.round(75 * progress) + '<i>%</i>');
-			});
-			// Second circle Progress
-			$('.second.circle').circleProgress({
-				value: 0.80,
-				size: 150,
-				startAngle: 3,
-				thickness: 5,
-				emptyFill: "#000",
-				animation: {
-					duration: 2200
-				},
-				fill: {
-					color: "#D63138"
-				}
-			}).on('circle-animation-progress', function (event, progress) {
-				$(this).find('strong').html(Math.round(80 * progress) + '<i>%</i>');
-			});
-			// Third circle Progress
-			$('.third.circle').circleProgress({
-				value: 1,
-				size: 150,
-				startAngle: 3,
-				thickness: 5,
-				emptyFill: "#000",
-				animation: {
-					duration: 2200
-				},
-				fill: {
-					color: "#D63138"
-				}
-			}).on('circle-animation-progress', function (event, progress) {
-				$(this).find('strong').html(Math.round(100 * progress) + '<i>%</i>');
-			});
-		}
-
-		var waypoint = new Waypoint({
-			element: document.getElementById('progress'),
-			handler: function (direction) {
-				animateProgressBar();
-				this.destroy();
-			},
-			offset: '75%'
-		});
 
 		/*-------------------------------------
 		    WOW js
@@ -141,21 +79,21 @@
 
 		// Active isotope with jQuery code
 
-		$('.iso-content').isotope({
-			itemSelector: '.single-project',
-			layoutMode: 'fitRows'
-		});
+		// $('.iso-content').isotope({
+		// 	itemSelector: '.single-project',
+		// 	layoutMode: 'fitRows'
+		// });
 
 		// Isotope click function
 
-		$('.iso-nav ul li').click(function () {
-			$('.iso-nav ul li').removeClass('portfolio-active');
-			$(this).addClass('portfolio-active');
-			var selector = $(this).attr('data-filter');
-			$('.iso-content').isotope({
-				filter: selector
-			});
-			return false;
-		});
+		// $('.iso-nav ul li').click(function () {
+		// 	$('.iso-nav ul li').removeClass('portfolio-active');
+		// 	$(this).addClass('portfolio-active');
+		// 	var selector = $(this).attr('data-filter');
+		// 	$('.iso-content').isotope({
+		// 		filter: selector
+		// 	});
+		// 	return false;
+		// });
 	});
 }(jQuery));
