@@ -6,7 +6,11 @@ class ContactsController < ApplicationController
 
   def create
     @contact = Contact.create(contact_params)
+    if @contact.valid?
       redirect_to root_path
+    else
+      return render text: 'Form Not Complete'
+    end
   end
 
 
