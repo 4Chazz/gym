@@ -7,9 +7,11 @@ class ContactsController < ApplicationController
   def create
     @contact = Contact.create(contact_params)
     if @contact.valid?
-      redirect_to root_path
+      flash.now[:notice] = 'Thank you for your message. We will contact you soon!'
+      # redirect_to root_path
     else
-      return render text: 'Form Not Complete'
+      flash.now[:error] = 'Form Incomplete'
+      redirect_to contacts
     end
   end
 
